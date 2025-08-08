@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Masalah SMAN 7 Kota Tangerang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        #menu-toggle:checked ~ #mobile-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <img src="https://www.dbl.id/uploads/school/32946/561-SMAN_7_TANGERANG.png" alt="Logo SMAN 7 Kota Tangerang berupa gambar bendera sekolah dengan warna merah putih" class="rounded-full border-2 border-white w-12 h-12">
+                    <div>
+                        <h1 class="text-2xl font-bold">SMAN 7 Kota Tangerang</h1>
+                        <p class="text-sm">Peview masalah dan solusi</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="hover:text-blue-200">Beranda</a>
+                    <a href="#masalah" class="hover:text-blue-200">Masalah</a>
+                    <a href="#solusi" class="hover:text-blue-200">Solusi</a>
+                    <a href="#kontak" class="hover:text-blue-200">Kontak</a>
+                </div>
+                <div class="md:hidden">
+                    <label for="menu-toggle" class="cursor-pointer">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <input type="checkbox" id="menu-toggle" class="hidden">
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-700 pb-4">
+            <a href="#" class="block px-4 py-2 hover:bg-blue-600">Beranda</a>
+            <a href="#masalah" class="block px-4 py-2 hover:bg-blue-600">Masalah</a>
+            <a href="#solusi" class="block px-4 py-2 hover:bg-blue-600">Solusi</a>
+            <a href="#kontak" class="block px-4 py-2 hover:bg-blue-600">Kontak</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gray-100 py-16">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Belajar Tanpa Batas, Bukan Hambatan</h2>
+                <p class="text-gray-600 mb-6">Platform diskusi terbuka tentang berbagai masalah di lingkungan SMAN 7 Kota Tangerang dan solusi untuk perbaikan bersama.</p>
+                <button id="scroll-to-problems" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                    Lihat Masalah Populer <i class="fas fa-arrow-down ml-2"></i>
+                </button>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Sman_7_tangerang.png" alt="Ilustrasi guru dan siswa SMAN 7 sedang berdiskusi di ruang kelas yang terang" class="rounded-lg shadow-lg w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Problems Section -->
+        <section id="masalah" class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Masalah yang Dihadapi</h2>
+            
+            <!-- Problem Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Problem 1 -->
+                <div class="article-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7537e106-9f19-4121-85ed-8ec56829927c.png" alt="Fasilitas laboratorium SMAN 7 yang sudah usang dengan peralatan yang tidak lengkap" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">Fasilitas yang Tidak Memadai</h3>
+                        <p class="text-gray-600 mb-4">Banyak fasilitas sekolah seperti laboratorium dan lapangan olahraga telah usang dan memerlukan perbaikan segera.</p>
+                        <div>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mr-2">Fasilitas</span>
+                            <span class="inline-block bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full mr-2">Mendesak</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Problem 2 -->
+                <div class="article-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/60dc004e-1a8b-4a71-8d7c-f20c4c65809e.png" alt="Siswa SMAN 7 terlihat mengantuk di kelas karena kelelahan dari banyaknya tugas yang diberikan" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">Beban Tugas yang Berlebihan</h3>
+                        <p class="text-gray-600 mb-4">Siswa seringkali mengeluh tentang banyaknya tugas yang diberikan secara bersamaan oleh guru-guru berbeda.</p>
+                        <div>
+                            <span class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full mr-2">Akademik</span>
+                            <span class="inline-block bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full">Masalah Umum</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Problem 3 -->
+                <div class="article-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d365a2fe-858f-4476-a57b-c866c05ecbe9.png" alt="WC siswa SMAN 7 yang tidak terawat dengan kondisi yang kotor dan bau" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">Kebersihan Lingkungan Sekolah</h3>
+                        <p class="text-gray-600 mb-4">Kebersihan toilet dan beberapa area sekolah seringkali tidak terjaga dengan baik, menciptakan lingkungan belajar yang tidak nyaman.</p>
+                        <div>
+                            <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full mr-2">Lingkungan</span>
+                            <span class="inline-block bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full">Mendesak</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Problem 4 -->
+                <div class="article-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9c9073e8-ecd3-4397-9200-68ea1f5c26f3.png" alt="Kantin sekolah dengan antrean panjang karena tidak cukup tempat untuk menampung siswa saat jam istirahat" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">Kapasitas Kantin yang Terbatas</h3>
+                        <p class="text-gray-600 mb-4">Antrian panjang di kantin selama jam istirahat karena terbatasnya tempat duduk dan jumlah pedagang.</p>
+                        <div>
+                            <span class="inline-block bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded-full mr-2">Fasilitas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Problem 5 -->
+                <div class="article-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/274790e4-6352-4587-8b81-bdea754a945d.png" alt="Suasana kelas SMAN 7 yang panas dengan kipas angin yang tidak berfungsi maksimal" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">Sirkulasi Udara di Kelas</h3>
+                        <p class="text-gray-600 mb-4">Banyak kelas memiliki sirkulasi udara yang buruk dan kipas yang tidak berfungsi optimal, membuat suasana belajar tidak nyaman.</p>
+                        <div>
+                            <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-full mr-2">Infrastruktur</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Problem 6 -->
+                <div class="article-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ed7ac5f4-ed42-44ab-897d-564063b7bcee.png" alt="Beberapa siswa SMAN 7 terlihat berkelahi di area parkir sekolah" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">Isu Perundungan Antar Siswa</h3>
+                        <p class="text-gray-600 mb-4">Ada laporan tentang beberapa kasus perundungan yang terjadi antar siswa yang belum tertangani dengan baik.</p>
+                        <div>
+                            <span class="inline-block bg-pink-100 text-pink-800 text-xs px-2 py-1 rounded-full mr-2">Sosial</span>
+                            <span class="inline-block bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full">Mendesak</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Solutions Section -->
+        <section id="solusi" class="mb-16 bg-blue-50 rounded-xl p-8">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Solusi yang Diusulkan</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Solution 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-tools text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Perbaikan Fasilitas Sekolah</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Mengajukan proposal ke dinas pendidikan untuk alokasi dana perbaikan laboratorium dan fasilitas olahraga.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-user-edit mr-2"></i>
+                        <span>Diposkan oleh: OSIS SMAN 7</span>
+                    </div>
+                </div>
+                
+                <!-- Solution 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-calendar-check text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Koordinasi Penugasan</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Membentuk tim koordinasi guru untuk menyelaraskan jadwal pemberian tugas sehingga tidak membebani siswa secara bersamaan.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-user-edit mr-2"></i>
+                        <span>Diposkan oleh: Perwakilan Siswa</span>
+                    </div>
+                </div>
+                
+                <!-- Solution 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-hands-helping text-yellow-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Program Kebersihan</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Membentuk tim piket kebersihan yang terdiri dari siswa dan guru secara bergiliran untuk memantau kebersihan toilet dan area sekolah.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-user-edit mr-2"></i>
+                        <span>Diposkan oleh: Tim Kebersihan</span>
+                    </div>
+                </div>
+                
+                <!-- Solution 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-utensils text-purple-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Perluasan Area Kantin</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Memperluas area kantin dan menambah jumlah pedagang dengan sistem shift selama jam istirahat untuk mengurangi antrian.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-user-edit mr-2"></i>
+                        <span>Diposkan oleh: Komite Kantin</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Suara Siswa dan Guru</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/be46c665-d23e-4787-b5b7-04940ad973b2.png" alt="Foto siswa bernama Rudi kelas 11 IPA SMAN 7 dengan seragam sekolah dan senyum lebar" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Rudi, Kelas 11 IPA</h4>
+                            <p class="text-sm text-gray-500">Siswa SMAN 7</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Laboratorium komputer kami sangat ketinggalan zaman. Komputer minimal berusia 10 tahun dan sering hang saat praktikum. Mohon diupgrade!"</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/06e6ff67-a9fc-49fc-89f8-fd971d06574d.png" alt="Foto Ibu Siti guru matematika SMAN 7 dengan kacamata dan ekspresi serius" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Ibu Siti</h4>
+                            <p class="text-sm text-gray-500">Guru Matematika</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Sebagai guru, saya paham beban tugas yang banyak bisa menyulitkan siswa. Kami sedang berkoordinasi untuk menyeimbangkan pemberian tugas antar mata pelajaran."</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Form -->
+        <section id="kontak" class="mb-16 bg-white p-8 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Sampaikan Masalahmu</h2>
+            <p class="text-center text-gray-600 mb-8">Berikan masukan atau laporkan masalah yang kamu temui di lingkungan sekolah.</p>
+            
+            <form id="complaint-form" class="max-w-2xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label for="name" class="block text-gray-700 mb-2">Nama Lengkap</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="role" class="block text-gray-700 mb-2">Peran</label>
+                        <select id="role" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                            <option value="">Pilih peran Anda</option>
+                            <option value="siswa">Siswa</option>
+                            <option value="guru">Guru</option>
+                            <option value="staff">Staf</option>
+                            <option value="orangtua">Orang Tua</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-gray-700 mb-2">Email</label>
+                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div class="mb-6">
+                    <label for="issue" class="block text-gray-700 mb-2">Kategori Masalah</label>
+                    <select id="issue" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                        <option value="">Pilih kategori masalah</option>
+                        <option value="fasilitas">Fasilitas Sekolah</option>
+                        <option value="akademik">Akademik</option>
+                        <option value="lingkungan">Lingkungan Sekolah</option>
+                        <option value="sosial">Masalah Sosial</option>
+                        <option value="lainnya">Lainnya</option>
+                    </select>
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 mb-2">Deskripsi Masalah</label>
+                    <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 w-full">
+                    Kirim Laporan
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">SMAN 7 Kota Tangerang</h3>
+                    <p class="text-gray-400">Jl. Pendidikan No.7, Kec. Tangerang, Kota Tangerang, Banten 15118</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Beranda</a></li>
+                        <li><a href="#masalah" class="text-gray-400 hover:text-white">Masalah</a></li>
+                        <li><a href="#solusi" class="text-gray-400 hover:text-white">Solusi</a></li>
+                        <li><a href="#kontak" class="text-gray-400 hover:text-white">Kontak</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Kontak Kami</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400"><i class="fas fa-phone mr-2"></i> (021) 5523123</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-envelope mr-2"></i> info@sman7tangerang.sch.id</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Media Sosial</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 SMAN 7 Kota Tangerang. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.getElementById('scroll-to-problems').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('masalah').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+
+        // Form submission
+        document.getElementById('complaint-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const issue = document.getElementById('issue').value;
+            
+            if(name && issue) {
+                alert(`Terima kasih ${name} atas laporan Anda tentang masalah ${issue}. Kami akan segera menindaklanjutinya.`);
+                this.reset();
+            } else {
+                alert('Silakan lengkapi form terlebih dahulu!');
+            }
+        });
+
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('change', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.style.display = this.checked ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>
+
