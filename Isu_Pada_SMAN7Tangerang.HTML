@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMAN 7 Kota Tangerang - Isu, Dampak & Solusi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+        }
+        
+        .nav-link:hover {
+            transform: translateY(-2px);
+            transition: transform 0.2s ease;
+        }
+        
+        .issue-card:hover, .impact-card:hover, .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 
+                        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 1.8rem;
+            }
+            
+            .card-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header text-white py-6 shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="https://www.dbl.id/uploads/school/32946/561-SMAN_7_TANGERANG.png" alt="Logo SMAN 7 Kota Tangerang - Perisai berwarna emas dengan lambang padi dan kapas di tengah" class="mr-4 w-12 h-12">
+                    <div>
+                        <h1 class="text-2xl font-bold">SMAN 7 KOTA TANGERANG</h1>
+                        <p class="text-sm opacity-80">Berprestasi, Berakhlak, dan Berbudaya</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#issues" class="nav-link hover:text-blue-200">Isu</a>
+                    <a href="#impacts" class="nav-link hover:text-blue-200">Dampak</a>
+                    <a href="#solutions" class="nav-link hover:text-blue-200">Solusi</a>
+                    <a href="#about" class="nav-link hover:text-blue-200">Tentang</a>
+                </nav>
+                <button class="md:hidden text-2xl">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero py-16 bg-blue-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="hero-title text-3xl md:text-4xl font-bold mb-4 text-blue-900">
+                Analisis Permasalahan di <span class="text-blue-600">SMAN 7 Kota Tangerang</span>
+            </h2>
+            <p class="max-w-2xl mx-auto text-lg text-slate-600 mb-8">
+                Temukan analisis mendalam tentang isu-isu pendidikan, dampaknya terhadap proses belajar mengajar, 
+                dan solusi inovatif yang kami tawarkan.
+            </p>
+        </div>
+    </section>
+
+    <!-- Issues Section -->
+    <section id="issues" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4 text-blue-900">Isu Utama di Lingkungan Sekolah</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="max-w-2xl mx-auto text-slate-600">
+                    Beberapa tantangan yang kami identifikasi dalam lingkungan pendidikan di SMAN 7 Kota Tangerang
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Issue Card 1 -->
+                <div class="issue-card bg-white p-6 rounded-xl shadow-md border-l-4 border-blue-500">
+                    <div class="text-blue-500 text-5xl mb-4">1</div>
+                    <h3 class="text-xl font-semibold mb-3">Masalah minoritas di sekolah</h3>
+                    <p class="text-slate-600 mb-4">
+                        Masalah senioritas di sekolah bisa mencakup intimidasi, diskriminasi, tekanan, kurangnya kesempatan, dan konflik.
+                    </p>
+                    <div class="aspect-w-16 aspect-h-9 mb-4">
+                        <img src="https://www.tangerangnews.com/assets/uploaded/phpThumb/phpThumb.php?src=/assets/uploaded/photo/2016/03/02/1a3313d29546d1ab4f773143a25268f6.jpg&w=630&h=367&zc=1&hash=1292bd05a3ac86439d89c8dbcebc6672" alt="orang yang sedah dijauhi oleh sekelompok" class="rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impacts Section -->
+    <section id="impacts" class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4 text-blue-900">Dampak dari Permasalahan</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="max-w-2xl mx-auto text-slate-600">
+                    Efek yang ditimbulkan dari berbagai isu yang ada terhadap proses belajar mengajar
+                </p>
+            </div>
+            
+            <div class="flex flex-col space-y-8 max-w-4xl mx-auto">
+                <!-- Impact Item 1 -->
+                <div class="impact-card bg-white p-6 rounded-xl shadow-md flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/3 mb-4 md:mb-0 md:pr-6">
+                        <img src="https://www.konde.co/wp-content/uploads/2023/08/6915253.jpg" alt="Orang yang terkena intimidasi dan bullying" class="rounded-lg w-full">
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-xl font-semibold mb-3 text-red-600">Junior Terkena Intimidasi Dan Menjadi Korban Bullying</h3>
+                        <p class="text-slate-600 mb-4">
+                            Junior merasa takut dan terintimidasi oleh senior. Hal ini menyebabkan mereka merasa tidak nyaman dan tidak mau berpartisipasi.
+                        </p>
+                        <div class="flex items-center text-sm text-slate-500">
+                            <span class="inline-block w-3 h-3 rounded-full bg-red-500 mr-2"></span>
+                            Tingkat Keparahan: Sangat Tinggi
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Impact Item 2 -->
+                <div class="impact-card bg-white p-6 rounded-xl shadow-md flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/3 mb-4 md:mb-0 md:pr-6">
+                        <img src="https://assets.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/ayojakarta/images/post/articles/2020/04/11/15311/ilustrasi_stress_belajar.jpg" alt="Orang yang stress karena lingkungan yang tidak nyaman" class="rounded-lg w-full">
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-xl font-semibold mb-3 text-yellow-600">Lingkungan Belajar Tidak Nyaman</h3>
+                        <p class="text-slate-600 mb-4">
+                            Hal itu karena mereka sulit berinteraksi dengan teman-temannya dan tekanan dari guru atau senior
+                        </p>
+                        <div class="flex items-center text-sm text-slate-500">
+                            <span class="inline-block w-3 h-3 rounded-full bg-yellow-500 mr-2"></span>
+                            Tingkat Keparahan: Sedang
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Impact Item 3 -->
+                <div class="impact-card bg-white p-6 rounded-xl shadow-md flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/3 mb-4 md:mb-0 md:pr-6">
+                        <img src="https://pict.sindonews.net/dyn/732/pena/news/2025/01/29/15/1522501/25-contoh-konflik-sosial-di-sekolah-dari-sisi-siswa-guru-hingga-wali-murid-cgf.jpg" alt="Konflik sosial di sekolah yang berdampak di lingkungan sekkolah" class="rounded-lg w-full">
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-xl font-semibold mb-3 text-purple-600">Konflik Dan Ketegangan</h3>
+                        <p class="text-slate-600 mb-4">
+                            Konflik antara senior dan junior dapat merusak hubungan dan menciptakan ketegangan. Jika tidak dihentikan, maka mengakibatkan oleh junior yang seterusnya
+                        </p>
+                        <div class="flex items-center text-sm text-slate-500">
+                            <span class="inline-block w-3 h-3 rounded-full bg-purple-500 mr-2"></span>
+                            Tingkat Keparahan: Tinggi
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4 text-blue-900">Solusi yang Ditawarkan</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="max-w-2xl mx-auto text-slate-600">
+                    Solusi untuk mengatasi masalah tersebut adalah:
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Solution Card 1 -->
+                <div class="solution-card bg-blue-50 p-6 rounded-xl shadow-md border border-blue-100">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-9 8c0 1 1 1 1 1h10s1 0 1-1-1-4-6-4-6 3-6 4m13.5-8.09c1.387-1.425 4.855 1.07 0 4.277-4.854-3.207-1.387-5.702 0-4.276Z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold">Pembinaan Karakter</h3>
+                    </div>
+                    <p class="text-slate-600 mb-4">
+                        Seorang guru harus memprioritaskan pembinaan karakter dan etika bagi semua siswa.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Etika</span>
+                    </div>
+                </div>
+                
+                <!-- Solution Card 2 -->
+                <div class="solution-card bg-blue-50 p-6 rounded-xl shadow-md border border-blue-100">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold">Selalu Mengawasi Siswa</h3>
+                    </div>
+                    <p class="text-slate-600 mb-4">
+                        Guru dan staf sekolah harus memantau dan mengawasi interaksi antara senior dan junior.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Perhatian</span>
+                    </div>
+                </div>
+                
+                <!-- Solution Card 3 -->
+                <div class="solution-card bg-blue-50 p-6 rounded-xl shadow-md border border-blue-100">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold">Memberi Penghargaan</h3>
+                    </div>
+                    <p class="text-slate-600 mb-4">
+                        Menghargai dan memotivasi siswa yang menunjukkan perilaku positif dan kepemimpinan yang baik.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Penghargaan</span>
+                    </div>
+                </div>
+                
+                <!-- Solution Card 4 -->
+                <div class="solution-card bg-blue-50 p-6 rounded-xl shadow-md border border-blue-100">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold">Komunikasi Terbuka</h3>
+                    </div>
+                    <p class="text-slate-600 mb-4">
+                        Mendorong komunikasi terbuka dan jujur antara senior dan junior untuk menyelesaikan masalah.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Komunikasi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h2 class="text-3xl font-bold mb-6">Tentang SMAN 7 Kota Tangerang</h2>
+                    <p class="mb-6 opacity-90">
+                        SMAN 7 Kota Tangerang Berdiri pada tahun 1993 yang merupakan Kelas Jauh (KJ) dari SMAN 1 Tangerang dengan nama SMAN 6 Tangerang. Tahun 1997 berubah nama menjadi SMAN 7 Kota Tangerang hingga sekarang. Kami berkomitmen untuk memberikan pendidikan berkualitas dan membentuk generasi yang berkarakter.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div>
+                            <div class="text-4xl font-bold mb-1">1,ooo+</div>
+                            <div class="text-sm opacity-80">Siswa Aktif</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold mb-1">49+</div>
+                            <div class="text-sm opacity-80">Tenaga Kependidikan</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold mb-1">28</div>
+                            <div class="text-sm opacity-80">Ruang Kelas</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold mb-1">15+</div>
+                            <div class="text-sm opacity-80">Program Ekstrakurikuler</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://media.licdn.com/dms/image/v2/C511BAQFMnJWuOzt0Tw/company-background_10000/company-background_10000/0/1584097683058/sma_negeri_7_kota_tangerang_cover?e=2147483647&v=beta&t=RgdAWWTXy6fgadNVIzNMfi_T4gvLAQ0wZcutBq8kvRY" alt="Gedung utama SMAN 7 Kota Tangerang dengan lapangan upacara dan tiang bendera di depan" class="rounded-xl shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section Removed - Not Used -->
+
+    <!-- Footer -->
+    <footer class="bg-blue-950 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <img src="https://www.dbl.id/uploads/school/32946/561-SMAN_7_TANGERANG.png" alt="Logo kecil SMAN 7 Kota Tangerang - Versi sederhana dari logo utama" class="mr-3 w-20 h-20">
+                        <h3 class="text-xl font-bold">SMAN 7 KOTA TANGERANG</h3>
+                    </div>
+                    <p class="text-sm opacity-80 max-w-xs">
+                        Jl. Perintis Kemerdekaan I No.2, Babakan, Kec. Tangerang, Kota Tangerang, Banten 15118
+                    </p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="https://www.instagram.com/s7uta?igsh=ZnNqYmQ5amhlbmdj" class="hover:text-blue-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://id.linkedin.com/school/sma-negeri-7-kota-tangerang/" class="hover:text-blue-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/sman7tangerang/?locale=id_ID" class="hover:text-blue-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm opacity-80 mb-4 md:mb-0">
+                    © 2025 SMAN 7 Kota Tangerang. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Mobile menu toggle functionality
+        const mobileMenuButton = document.querySelector('.md\\:hidden');
+        const navLinks = document.querySelector('nav');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            navLinks.classList.toggle('hidden');
+            navLinks.classList.toggle('flex');
+            navLinks.classList.toggle('flex-col');
+            navLinks.classList.toggle('absolute');
+            navLinks.classList.toggle('top-16');
+            navLinks.classList.toggle('right-4');
+            navLinks.classList.toggle('bg-blue-900');
+            navLinks.classList.toggle('p-4');
+            navLinks.classList.toggle('rounded-lg');
+            navLinks.classList.toggle('shadow-lg');
+            navLinks.classList.toggle('space-y-4');
+        });
+        
+        // Form submission handling
+        const contactForm = document.querySelector('form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Terima kasih atas pesan Anda! Kami akan segera menghubungi Anda kembali.');
+                this.reset();
+            });
+        }
+    </script>
+</body>
+</html>
